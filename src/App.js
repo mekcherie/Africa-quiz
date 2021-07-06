@@ -1,23 +1,12 @@
-import React from 'react';
-// import { createStore } from 'redux'
-// import { Provider } from 'react-redux'
-// import reducers from './reducers'
-
-import './App.css';
-
-
-// const store = createStore(reducers)
+import React, { useState } from 'react';
+import FlashcardList from './FlashcardList';
+import questions from './questions';
+import './flashcard.css';
 
 function App() {
+  const [flashcards,setFlashcards ] = useState(questions)
   return (
-    // <Provider store={store}>
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Africa Quiz</h1>
-        </header>
-      </div>
-    // </Provider>
+    <FlashcardList flashcards={flashcards} />
   );
 }
-
 export default App;
