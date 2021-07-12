@@ -7,9 +7,12 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
-    border-radius: .25rem;
-    box-shadow: 0 5px 0 2px pink;
-    background-color: white;
+    left: 20px;
+    padding: 40px;
+    margin: 35px;
+    border-radius: 1.25rem;
+    box-shadow: 0 5px 0 2px black;
+    background-color: pink;
     transform-style: preserve-3d;
     height: 150px;
     width: 150px;
@@ -18,12 +21,15 @@ body {
     transform: perspective(1000px) rotateY(var(--rotate-y, 0));
     transform-style: preserve-3d;
 }
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .card:hover {
     box-shadow: 0 0 5px 2px black;
 }
 .card.flip {
-    /* transform-style: preserve-3d; */
     --rotate-y: 180deg;
 }
 .card .front {
@@ -41,13 +47,10 @@ body {
 }
 
 .flashcard-options {
-    margin-top: .5rem;
-}
-
-.flashcard-option {
-    margin-top: .25rem;
+    margin-top: 1rem;
     color: grey;
-    font-size: .75rem;
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .flashcard-option:first-child {

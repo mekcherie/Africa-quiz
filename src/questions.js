@@ -1,9 +1,7 @@
-
-
 const SAMPLE_FLASHCARDS = [
     {
       id: 1,
-      question: 'what is the only African Country never been colonized?',
+      question: 'what is the only African Country that has never been colonized?',
       answer: 'Ethiopia',
       options: [
         'Kenya',
@@ -72,18 +70,6 @@ const SAMPLE_FLASHCARDS = [
       '3rd'
     ]
   },
-  
-  {
-    id: 7,
-    question: 'What is the name of newest country in Africa (and the world)?',
-    answer: 'South Sudan',
-    options: [
-      'South Sudan',
-      'Somalia',
-      'Gambia',
-      'Egypt'
-    ]
-  }
-  ]
+]
 
   export default SAMPLE_FLASHCARDS
