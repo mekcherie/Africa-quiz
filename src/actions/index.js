@@ -1,25 +1,17 @@
-export const SET_FLASHCARD = 'SET_FLASHCARD'
 export const PICK_FLASHCARD = 'PICK_FLASHCARD'
 export const FLIP_FLASHCARD= 'FLIP_FLASHCARD'
 
-export const flipFlashcard = (flashcard) => {
+export const flipFlashcard = (index, flashcard, answer) => {
 	return {
 		type: FLIP_FLASHCARD,
-		payload: {flashcard}
+		payload: {index, flashcard, answer}
 	}
 }
 
-export const setFlashcard = (flashcard, index) => {
-	return {
-		type: SET_FLASHCARD,
-		payload: { flashcard, index }
-	}
-}
-
-export const pickFlashcard = (flashcard) => {
+export const pickFlashcard = (flashcard, question) => {
 	return {
 		type: PICK_FLASHCARD, 
-		payload: { flashcard }
+		payload: { flashcard,question }
 	}
 }
 

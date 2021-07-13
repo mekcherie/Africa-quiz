@@ -1,7 +1,10 @@
 body {
     background-color: antiquewhite;
 }
-
+.App {
+    color: brown;
+    text-align: center;
+}
 .card {
     display: flex;
     justify-content: center;

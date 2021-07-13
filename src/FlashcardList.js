@@ -1,6 +1,6 @@
-import { useSelector, useDispatch } from 'react-redux'
+// import { useSelector, useDispatch } from 'react-redux'
+// import { setFlashcard } from './actions'
 import React from 'react'
-import { setFlashcard } from './actions'
 import Flashcard from './Flashcard'
 
 function FlashcardList({flashcards}) {
@@ -12,22 +12,28 @@ function FlashcardList({flashcards}) {
             </div>
         )
     }
-
     export default FlashcardList
 
-
-// function FlashcardList() {
+// function FlashcardList({flashcards}) {
 // 	const arr = useSelector(state => state.flashcard)
 // 	const selectedFlashcard = useSelector(state => state.flashcard)
 // 	const dispatch = useDispatch()
 
 // 	return (
 // 		<div className="card-grid">
-// 			{arr.map((flashcard, i) => <div 
+// 			{arr.map((flashcard, id) => <div 
 // 				style={{ flashcardlist: flashcard }} 
-// 				onClick={() => dispatch(setFlashcard(selectedFlashcard, i))}
+// 				onClick={() => dispatch(setFlashcard(selectedFlashcard, id))}
 // 			/>)}
 // 		</div>
 // 	)
 // }
+// export default FlashcardList
+
+
+
+
+
+
+
 
