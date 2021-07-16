@@ -72,4 +72,4 @@ const SAMPLE_FLASHCARDS = [
   },
 ]
 
-  export default SAMPLE_FLASHCARDS
+export default SAMPLE_FLASHCARDS

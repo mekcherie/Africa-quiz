@@ -1,11 +1,13 @@
 body {
     background-color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
 }
 .App {
     color: brown;
     text-align: center;
 }
 .card {
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
     justify-content: center;
     align-items: center;
